@@ -31,9 +31,11 @@ window = Tk()
 window.title("Калькулятор уравнений")
 window.geometry("1920x1080") 
 
-knopka = Button(window,text="Решить", fg="red", bg="lightblue", font="Arial 40", width=15)
-input_a = Entry(window, width=4, bd=10,font="Arial 20")
-input_b = Entry(window, width=4, bd=10,font="Arial 20")
+l = Label(window, text="Решение квадратного уравнения", font="Arial 24", bg="lightblue", bd=5, fg="black" )
+l.pack(side=TOP)
+knopka = Button(window,text="Решить", fg="black", bg="lightgreen", font="Arial 40", width=10)
+input_a = Entry(window, width=4, bd=10,font="Arial 20", bg="lightblue")
+input_b = Entry(window, width=4, bd=10,font="Arial 20", bg="lightblue")
 input_c = Entry(window, width=4, bd=10,font="Arial 20", bg="red")
 window.geometry('400x600')
 input_a.pack(side=LEFT)
@@ -46,7 +48,9 @@ input_c.pack(side=LEFT)
 l = Label(window, text=" = 0" ,width=15,fg="green",bd=20,font="Arial 20")
 l.pack(side=LEFT)
 
-answer = Label(window, text="Решение = ", font="Arial 24")
+
+
+answer = Label(window, text="Ответ: x1/x2 = ", font="Arial 24")
 answer.pack(side=LEFT, anchor=SW)
 
 
